@@ -58,7 +58,7 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
   // Step 7: Append Axes to the chart
   // ==============================
   chartGroup.append("g")
-    .attr("transform", `translate(0, ${height})`)
+    .attr("transform", `translate(6, ${height})`)
     .call(bottomAxis);
 
   chartGroup.append("g")
