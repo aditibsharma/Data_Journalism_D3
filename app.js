@@ -43,12 +43,12 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
   // Step 5: Create scale functions
   // ==============================
   var xLinearScale = d3.scaleLinear()
-    .domain([0, d3.max(unemploymentData, d => d.UnemploymentRate)])
-    .range([0, width]);
+    .domain([2, d3.max(unemploymentData, d => d.UnemploymentRate)])
+    .range([2, width]);
 
   var yLinearScale = d3.scaleLinear()
-    .domain([0, d3.max(unemploymentData, d => d.ConfidenceLimitHigh)])
-    .range([height, 0]);
+    .domain([20, d3.max(unemploymentData, d => d.ConfidenceLimitHigh)])
+    .range([height, 20]);
 
   // Step 6: Create axis functions
   // ==============================
